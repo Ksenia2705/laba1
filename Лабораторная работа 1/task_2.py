@@ -9,6 +9,6 @@ v_book_byte = 4 * k_slo_in_st * st_on_page * pages
 
 v_book_Mb = v_book_byte/(1024**2)
 
-count = round(volume_on_disk/v_book_Mb)
+count = volume_on_disk//v_book_Mb
 
-print("Количество книг, помещающихся на дискету:", count)
+print("Количество книг, помещающихся на дискету:", f"{count:.0f}")
